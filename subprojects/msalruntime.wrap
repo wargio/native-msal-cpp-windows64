@@ -1,0 +1,9 @@
+[wrap-file]
+directory = pymsalruntime-0.14.0
+source_url = https://files.pythonhosted.org/packages/24/72/6d82b47785fbb3fd79bd5963c17927e3999c32ab709d7e25035988996a4a/pymsalruntime-0.14.0.tar.gz
+source_filename = pymsalruntime-0.14.0.tar.gz
+source_hash = 6d4c3a9038e0348a2315752f68a507eee11daca372f2c77c2452d9ed2284376d
+patch_directory = pymsalruntime-0.14.0
+
+[provide]
+dependency_names = msalruntime

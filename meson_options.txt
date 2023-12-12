@@ -1,0 +1,2 @@
+option('appid', type: 'string', value: '', description: 'Your Microsoft Azure AD/Entra ID "Application (client) ID"')
+option('tenant', type: 'string', value: '', description: 'Your Microsoft Azure AD/Entra ID "Directory (tenant) ID"')
