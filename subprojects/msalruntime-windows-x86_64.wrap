@@ -1,0 +1,7 @@
+[wrap-file]
+directory = pymsalruntime-0.18.0
+source_url = https://files.pythonhosted.org/packages/96/9a/18c524bd30813d571c96754292dcc16d6c2e674e917ef8f5f5d1e2d0199e/pymsalruntime-0.18.0-cp312-cp312-win_amd64.whl
+source_filename = pymsalruntime-0.18.0-win_amd64.zip
+source_hash = 5d60403bddaaca3e9c2f98d1930ce880b7ebe50fd4f77dfbb59bd80a4c1a9e9a	
+lead_directory_missing = pymsalruntime-0.18.0
+patch_directory = pymsalruntime-0.18.0

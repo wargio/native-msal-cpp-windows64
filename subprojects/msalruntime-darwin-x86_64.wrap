@@ -1,0 +1,7 @@
+[wrap-file]
+directory = pymsalruntime-0.18.0
+source_url = https://files.pythonhosted.org/packages/4f/a1/73a78299453ab209dcb7dd085f3640d20fdfd9582c56a8d0951a000fc160/pymsalruntime-0.18.0-cp312-cp312-macosx_14_0_x86_64.whl
+source_filename = pymsalruntime-0.18.0-macosx_x86_64.zip
+source_hash = 6a87d2ab214d90d8c1b8e166f72276d96837592a2f61191e914bb73cb168931c	
+lead_directory_missing = pymsalruntime-0.18.0
+patch_directory = pymsalruntime-0.18.0

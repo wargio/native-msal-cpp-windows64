@@ -1,4 +1,4 @@
-# Native MSAL C++ Example using msalruntime (windows x64 only)
+# Native MSAL C++ Example using msalruntime
 
 This is a C++ example which uses the Microsoft MSAL Runtime library available for the python MSAL module.
 
