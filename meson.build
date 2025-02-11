@@ -1,4 +1,4 @@
-project('native-msal-cpp-windows', 'cpp',
+project('native-msal-cpp', 'cpp',
   version: '0.1.0',
   license: ['MIT'],
   default_options : [
@@ -9,9 +9,15 @@ project('native-msal-cpp-windows', 'cpp',
   meson_version: '>=0.60.0')
 
 # Do some sanity checking so that meson can fail early instead of at final link time
-if not (host_machine.system() == 'windows' and host_machine.cpu_family() == 'x86_64')
-  error('msalruntime is a binary wrap for x64_64 Windows only. you should not compile this outside of windows.')
+expected_host = host_machine.system() == 'windows' or host_machine.system() == 'darwin'
+expected_cpus = host_machine.cpu_family() == 'x86_64' or host_machine.cpu_family() == 'x86' or host_machine.cpu_family() == 'aarch64'
+
+if not expected_host or not expected_cpus
+  error('msalruntime is a binary wrap for windows and darwin x64/x86/arm64 only. you should not compile this outside of windows or macos.')
 endif
+
+msalruntime_proj = subproject('msalruntime-' + target_machine.system() + '-' + target_machine.cpu_family())
+msalruntime_dep = msalruntime_proj.get_variable('msalruntime_dep')
 
 app_client_id = get_option('appid')
 app_authority = get_option('tenant')
@@ -30,7 +36,7 @@ msal_examples_cpp_args = [
 ]
 
 msal_examples_deps = [
-  dependency('msalruntime'),
+  msalruntime_dep,
 ]
 
 msal_examples = [
